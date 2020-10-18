@@ -1,0 +1,12 @@
+pet =int(input("introduceti numarul de petale:"))
+
+if pet%2==0:
+    print("mult")
+elif pet%3==0:
+    print("cu pasiune")
+elif pet%4==0:
+    print("la nebunie")
+elif pet%5==0:
+    print("de loc")
+else:
+    print("un pic")
