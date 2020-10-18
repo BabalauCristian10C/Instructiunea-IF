@@ -1,0 +1,13 @@
+z = int(input("afisati varsta primului om "))
+x = int(input("afisati varsta al doilea om "))
+c = int(input("afisati varsta a treilea om "))
+
+r = range(18, 61)
+
+ages=[z,x,c]
+i=0
+
+while i < len(ages):
+    if ages[i] in r:
+        print(ages[i])
+    i = i + 1
