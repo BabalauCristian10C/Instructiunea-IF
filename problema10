@@ -1,0 +1,12 @@
+gaini=int(input("introduceti numarul de gaini:"))
+boabe=int(input("introduceti numarul de boabe de porumb:"))
+
+if boabe > gaini:
+    if  boabe%gaini  == 0:
+        eg = int(boabe/gaini)
+        print(eg,"= egalitate")
+    else:
+        print("curcanul mai mult cu",boabe%gaini,"boabe")
+
+elif boabe<gaini:
+    print("boabele nu pot fi impartite egal")
