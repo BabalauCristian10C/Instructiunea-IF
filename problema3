@@ -1,0 +1,6 @@
+cns = [ "b", "c", "d", "f", "h", "j", "k" ,"l", "m", "n", "p" ,"q" ,"r", "s", "t" ,"v", "w" ,"x" ,"z", "y"]
+lit = str(input("introduceti litera dorita a fi analizata "))
+if lit in cns:
+    print(f'{lit} este o consoana')
+elif lit not in cns:
+    print(f' { lit} este o vocala')
