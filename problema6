@@ -1,0 +1,11 @@
+
+a=int(input("introduceti prima nota:"))
+b=int(input("introduceti a doua nota:"))
+c=int(input("introduceti a treia nota:"))
+
+if a in range(0, 11) and b in range(0, 11) and c in range(0, 11) :
+    if c>=8:
+        print(a,b,c, sep=" ")
+    if c<8:
+        print(max(a,b))
+else: print("notele nu sunt valide")
