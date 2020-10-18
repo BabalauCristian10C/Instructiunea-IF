@@ -1,0 +1,14 @@
+loc=int(input("introduceti locul copilului "))
+
+if loc<=100:
+    if loc%2==0:
+        print("Ion v-a priimi tricou de culoarea rosie")
+    elif loc%3==0:
+        print("Ion v-a priimi tricou de culoarea neagra")
+    elif loc%4==0:
+        print("Ion v-a priimi tricou de culoarea albastra")
+    else:
+        print("Ion v-a priimi tricou de culoarea alba")
+else: print("Ion nu va primi nici un tricou")
+
+
