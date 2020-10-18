@@ -1,0 +1,6 @@
+a = int(input("Al catalea a sosit Ionel ? al - "))
+i = 0
+for numbers in range(a):
+    if numbers % 4 == 0:
+        i = i +1
+print(i)
