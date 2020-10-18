@@ -1,0 +1,23 @@
+ac = 2020
+lc = 12
+zc = 19
+
+a=int(input("introduceti anul nasterii:"))
+l=int(input("introduceti luna nasterii:"))
+z=int(input("introduceti ziua nasterii:"))
+
+if a <= ac and l <= 12 and zc <= 31:
+    if (a == ac) and (z < zc):
+        print(f'varsta omului este de {l} luni')
+    if (a == ac) and (z > zc):
+        print(f'varsta omului este de {l + 1} luni')
+    if (a <= ac) and (l > lc):
+        print(f'varsta omului este de {(ac - a)-1} ani')
+    if (a <= ac) and (l <= lc):
+        print(f'varsta omului este de {(ac - a)} ani')
+    if  (a <= ac) and (l == lc) and (z > zc):
+        print(f'varsta omului este de {(ac - a)} ani')
+
+
+elif a >= ac and l >= 12 and zc >= 31:
+    print("Datele sunt introduse gresit")
