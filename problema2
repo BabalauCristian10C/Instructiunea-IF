@@ -1,0 +1,11 @@
+l1 = int(input("primul numar:"))
+l2 = int(input("al doilea numar:"))
+l3 = int(input("al treilea numar:"))
+
+if l1 < 32000 and l2 < 32000 and l3 < 32000:
+    if l1 < l2 + l3 and l2 < l1 + l3 and l3 < l1 + l2 and l1 > 0 and l2 > 0 and l3 > 0:
+        print("Da")
+    else:
+        print("aceste numere nu pot fi laturi ale unui triunghi")
+else:
+    print("aceste numere pot fi laturi unui triunghi")
