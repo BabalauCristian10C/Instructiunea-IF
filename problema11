@@ -1,0 +1,11 @@
+a=int(input("Introduceti primul numar:"))
+b=int(input("Introduceti al doilea numar:"))
+c=int(input("Introduceti al treilea numar:"))
+
+nmr = [a,b,c]
+
+for number in nmr:
+    if number % 2 == 0:
+        print(number, "par")
+    if number % 2 == 1:
+        print(number, "impar")
