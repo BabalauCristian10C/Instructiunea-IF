@@ -1,0 +1,28 @@
+albemici=int(input("Nr. bile albe mici:"))
+albemari=int(input("Nr. bile albe mari:"))
+rosiimici=int(input("Nr. bile rosii mici:"))
+rosiimari=int(input("Nr. bile rosii mari:"))
+verzmici=int(input("Nr. bile verzi mici:"))
+verzmari=int(input("Nr. bile verzi mari:"))
+
+
+print("mari = ", albemari + rosiimari + verzmari, "bile")
+print("nr de bile in total", albemici + albemari + rosiimici + rosiimari + verzmici + verzmari)
+
+
+if albemici>=0 and albemari>=0 and rosiimici>=0 and rosiimari>=0 and verzmici>=0 and verzmari>=0:
+    if albemici+albemari>rosiimici+rosiimari and albemici+albemari>verzmici+verzmari:
+        print("sunt mai multe bile albe ", albemici + albemari)
+    elif rosiimici+rosiimari>albemici+albemari and rosiimici+rosiimari>verzmici+verzmari:
+        print("sunt mai multe bile rosii ", rosiimici + rosiimari)
+    elif verzmici+verzmari>rosiimici+rosiimari and verzmici+verzmari>albemari+albemici:
+        print("sunt mai multe bile verzi ", verzmici + verzmari)
+    elif albemici+albemari==rosiimici+rosiimari and albemici+albemari>verzmici+verzmari:
+        print("numarul de bile albe si rosii este egal = ", albemici + albemari)
+    elif albemici+albemari==verzmici+verzmari and albemici+albemari>rosiimici+rosiimari:
+        print("numarul de bile albe si verzi este egal = ", albemici + albemari)
+    elif rosiimici+rosiimari==verzmici+verzmari and rosiimici+rosiimari>albemari+albemici:
+        print("numarul de bile verzi si rosii este egal = ", rosiimici + rosiimari)
+    elif albemici+albemari==rosiimici+rosiimari and albemici+albemari==verzmici+verzmari:
+        print("numarul bilelor de fiecare culoare este egal")
+else: print("numarul de bile e introdus incorect")
