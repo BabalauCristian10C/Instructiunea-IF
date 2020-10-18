@@ -1,0 +1,17 @@
+
+a=int(input("introduceti locul lui Radu dupa medie:"))
+
+
+clase = {1: "'A'", 2:"'B'",  3:"'C'", 4 :"'D'"}
+
+if a < 100:
+    c = float(a/25)
+    if c < 1 or c == 1:
+        c = 1
+    if c > 1 and c<=2:
+        c = 2
+    if c > 2 and c<=3:
+        c = 3
+    if c > 3 and c<=4:
+        c = 4
+    print("Radu va nimeri in a V-a ",clase[round(c)])
